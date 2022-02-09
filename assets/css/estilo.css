@@ -43,9 +43,18 @@ body {
 
 .principal {
     grid-area: principal;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 180px); /*Ocupação 100% da página*/
     background-color: #f0f0f0;
     padding: 20px;
+}
+
+.conteudo {
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 1px 5px 14px 3px rgba(0,0,0,0.63);
 }
 
 .rodape {
@@ -57,3 +66,73 @@ body {
     padding-right: 20px;
     font-size: 0.9rem;
 }
+
+.modulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.modulo {
+    flex-basis: 32%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.modulo > h3 {
+    margin: 0px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #5e4bbf;
+}
+
+.modulo > ul {
+    margin: 0px;
+    padding: 10px;
+    list-style: none;
+}
+
+.modulo > ul > li {
+    padding: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.modulo > ul > li > a {
+    display: flex;
+    text-decoration: nome;
+    color: #222;
+}
+
+.modulo > ul > li:hover {
+    background-color: #eee;
+}
+
+.modulo.verde {border: 2px solid #4caf50;}
+.modulo.verde > h3 {background-color: #4caf50;}
+
+.modulo.vermelho {border: 2px solid #f44336;}
+.modulo.vermelho > h3 {background-color: #f44336;}
+
+.modulo.azul {border: 2px solid #2196f3;}
+.modulo.azul > h3 {background-color: #2196f3;}
+
+.modulo.roxo {border: 2px solid #9c27b0;}
+.modulo.roxo > h3 {background-color: #9c27b0;}
+
+.modulo.laranja {border: 2px solid #ff9800;}
+.modulo.laranja > h3 {background-color: #ff9800;}
+
+.modulo.verde-escuro {border: 2px solid #1b5e20;}
+.modulo.verde-escuro > h3 {background-color: #1b5e20;}
+
+.modulo.vermelho-escuro {border: 2px solid #b71c1c;}
+.modulo.vermelho-escuro > h3 {background-color: #b71c1c;}
+
+.modulo.azul-escuro {border: 2px solid #1955a8;}
+.modulo.azul-escuro > h3 {background-color: #1955a8;}
+
+.modulo.roxo-escuro {border: 2px solid #7a2273;}
+.modulo.roxo-escuro > h3 {background-color: #7a2273;}
